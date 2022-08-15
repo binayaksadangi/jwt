@@ -8,7 +8,9 @@ app.use(express.static('public'));
 
 // view engine
 app.set('view engine', 'ejs');
-app.listen(3000);
+app.listen(3000,()=>{
+  console.log("listening");
+});
 // database connection
 // const dbURI = 'mongodb+srv://shaun:test1234@cluster0.del96.mongodb.net/node-auth';
 // mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true })
