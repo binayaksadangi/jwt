@@ -5,7 +5,9 @@ const signup_get = (req,res)=>{
 }
 
 const signup_post = (req,res)=>{
-    res.send('new user created');
+    const {email,password} = req.body;
+    console.log(email,password);
+    res.send("signed in");
 }
 
 const login_get = (req,res)=>{
@@ -13,6 +15,8 @@ const login_get = (req,res)=>{
 }
 
 const login_post = (req,res)=>{
+    const {email,password} = req.body;
+    console.log(email,password);
     res.send("user logged in")
 }
 
